@@ -1,10 +1,6 @@
 import { T_TextAlign, T_TextTransform, Text } from "../Text";
 import { BaseButtonProps, ButtonBase } from "./ButtonBase";
 
-/** BUTTON - 13/07/2023
- * A basic, text-based button.
- */
-
 
 
 // TYPES

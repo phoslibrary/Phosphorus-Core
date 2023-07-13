@@ -10,5 +10,3 @@ export * from "./Layout/Layout"
 export * from "./Text"
 
 export * from "./_Global"
-
-//# sourceMappingURL=index.d.ts.map

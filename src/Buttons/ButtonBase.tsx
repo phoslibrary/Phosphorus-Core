@@ -3,12 +3,6 @@ import { CSSProperties, ReactNode, useState } from "react";
 import { Loader, MantineTheme, Sx, UnstyledButton } from "@mantine/core";
 import { ComponentSize, T_ComponentSize } from "../_Global";
 
-/** BUTTONBASE - 13/07/2023
- * The most basic element in the Phosphorus button rebuild. Buttons in Mantine are not suitable
- * for working in most cases due to the limitations with Mantine's color system, so this button
- * offers more useful values for us.
- */
-
 
 
 // TYPES

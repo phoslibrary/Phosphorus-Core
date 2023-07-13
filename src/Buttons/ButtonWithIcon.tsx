@@ -5,10 +5,6 @@ import { Text, TextAlign } from "../Text";
 import { ButtonProps } from "./Button";
 import { ButtonBase } from "./ButtonBase";
 
-/** BUTTONWITHICON - 13/07/2023
- * A complex button element that contains an icon before or after the text
- */
-
 
 
 // TYPES

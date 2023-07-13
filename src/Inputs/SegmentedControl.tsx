@@ -1,9 +1,5 @@
 import { MantineTheme, SegmentedControl as SC, SegmentedControlProps as MSegmentedControlProps, Sx } from "@mantine/core"
 
-/** SEGMENTEDCONTROL - 13/07/2023
- * A straightforward restyling of Mantine's Segmented Control component.
- */
-
 
 
 // Types

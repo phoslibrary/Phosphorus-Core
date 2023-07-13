@@ -2,12 +2,6 @@ import { Text as BaseText, TextProps as MTextProps } from "@mantine/core";
 import { CSSProperties } from "react";
 import reactStringReplace from "react-string-replace";
 
-/** TEXT - 13/07/2023
- * A basic override element for Mantine's text that allows for text formatting interjection.
- * This component should allow for much more elegant compatibility with the i18n-next module
- * and i18n in general.
- */
-
 
 
 // TYPES
