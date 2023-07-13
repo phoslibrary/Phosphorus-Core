@@ -1,0 +1,1 @@
+export { SegmentedControlProps, SegmentedControl } from "./SegmentedControl"

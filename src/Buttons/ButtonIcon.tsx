@@ -1,5 +1,5 @@
 import { ComponentSize } from "../_Global";
-import ButtonBase, { BaseButtonProps } from "./ButtonBase";
+import { BaseButtonProps, ButtonBase } from "./ButtonBase";
 
 /** BUTTONICON - 13/07/2023
  * Basic button element to create a button icon. Overrides some element default to 
@@ -17,7 +17,7 @@ export type ButtonIconProps = BaseButtonProps;
 /** A basic button element to create a button icon. Overrides some element default to 
  * make appearances work better for icons.
  */
-export default function ButtonIcon(props: ButtonIconProps) { 
+export function ButtonIcon(props: ButtonIconProps) { 
 
   return ( 
     <ButtonBase

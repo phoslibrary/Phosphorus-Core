@@ -13,7 +13,7 @@ export type SegmentedControlProps = MSegmentedControlProps;
 
 // COMPONENTS
 /** A re-styled segmented control from the Mantine package. Accepts all the same props */
-export default function SegmentedControl(props: SegmentedControlProps) {
+export function SegmentedControl(props: SegmentedControlProps) {
 
   // Styles
   const controlStyle: Sx = (theme: MantineTheme) => ({

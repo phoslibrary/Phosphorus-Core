@@ -1,5 +1,5 @@
-import Text, { T_TextAlign, T_TextTransform, TextAlign } from "../Text/Text";
-import ButtonBase, { BaseButtonProps } from "./ButtonBase";
+import { T_TextAlign, T_TextTransform, Text } from "../Text";
+import { BaseButtonProps, ButtonBase } from "./ButtonBase";
 
 /** BUTTON - 13/07/2023
  * A basic, text-based button.
@@ -8,7 +8,7 @@ import ButtonBase, { BaseButtonProps } from "./ButtonBase";
 
 
 // TYPES
-export type ButtonTextProps = BaseButtonProps & { 
+export type ButtonProps = BaseButtonProps & { 
   /** Text weight for this button"s text */
   weight?: number;
   /** Text size for this button"s text */
@@ -17,6 +17,8 @@ export type ButtonTextProps = BaseButtonProps & {
   transform?: T_TextTransform;
   /** Text alignment property to apply to this button"s text */
   align?: T_TextAlign;
+  /** The font family of the text */
+  fontFamily?: string;
 }
 
 
@@ -40,13 +42,13 @@ const ATTR = {
 }
 
 /** A basic, text-based button. */
-export default function Button(props: ButtonTextProps) {
+export function Button(props: ButtonProps) {
   return (
     <ButtonBase
       {...props}
     >
       <Text
-        family="Plus Jakarta Sans"
+        family={props.fontFamily}
         weight={props.weight || 800}
         transform={props.transform}
         align={props.align || "center"}

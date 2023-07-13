@@ -1,9 +1,9 @@
 import { Flex, Loader, MantineTheme, Sx } from "@mantine/core";
-import ButtonBase from "./ButtonBase";
 import { ReactNode } from "react";
-import { ButtonTextProps } from "./Button";
 import { ButtonIconProps } from "./ButtonIcon";
-import Text, { TextAlign } from "../../Text/Text";
+import { Text, TextAlign } from "../Text";
+import { ButtonProps } from "./Button";
+import { ButtonBase } from "./ButtonBase";
 
 /** BUTTONWITHICON - 13/07/2023
  * A complex button element that contains an icon before or after the text
@@ -12,7 +12,7 @@ import Text, { TextAlign } from "../../Text/Text";
 
 
 // TYPES
-export type ButtonWithIconProps = ButtonTextProps & ButtonIconProps & { 
+export type ButtonWithIconProps = ButtonProps & ButtonIconProps & { 
   /** The icon for this button */
   icon: ReactNode;
   /** The ordering of the icon relative to the text content */
@@ -25,7 +25,7 @@ export type ButtonWithIconProps = ButtonTextProps & ButtonIconProps & {
 
 // COMPONENTS
 /** A complex button element that contains an icon before or after the text */
-export default function ButtonWithIcon(props: ButtonWithIconProps) {
+export function ButtonWithIcon(props: ButtonWithIconProps) {
 
   const flexStyle: Sx = (theme: MantineTheme) => ({
     width: "100%",
@@ -53,9 +53,10 @@ export default function ButtonWithIcon(props: ButtonWithIconProps) {
         }
 
         <Text
+          family={props.fontFamily}
           weight={props.weight || 800}
           transform={props.transform}
-          align={props.align || TextAlign.Left}
+          align={props.align || TextAlign.left}
           style={{ flexGrow: props.growText ? 1 : 0 }}
         >
           {props.children}

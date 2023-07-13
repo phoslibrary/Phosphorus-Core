@@ -109,7 +109,7 @@ const ATTR = {
  * Phosphorus buttons take a single color input and apply transparency values to achieve similar
  * appearances across all backgrounds.
  */
-export default function ButtonBase(props: BaseButtonProps) {
+export function ButtonBase(props: BaseButtonProps) {
 
   // Set default values
   const size = props.size || ComponentSize.SM,

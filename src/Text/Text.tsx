@@ -13,21 +13,21 @@ import reactStringReplace from "react-string-replace";
 // TYPES
 /** Horizontal alignment of text */
 export enum TextAlign { 
-  Left = "left",
-  Right = "right",
-  Center = "center",
-  Justify = "justify",
+  left = "left",
+  right = "right",
+  center = "center",
+  justify = "justify",
 }
 // @ts-ignore
 const TextAligns = Object.keys(TextAlign) as (keyof typeof TextAlign);
 export type T_TextAlign = TextAlign | typeof TextAligns;
 
 /** Transform effects to apply to text */
-enum TextTransform {
-  None = "none",
-  Capitalize = "capitalize",
-  Uppercase = "uppercase",
-  Lowercase = "lowercase",
+export enum TextTransform {
+  none = "none",
+  capitalize = "capitalize",
+  uppercase = "uppercase",
+  lowercase = "lowercase",
 }
 // @ts-ignore
 const TextTransforms = Object.keys(TextTransform) as (keyof typeof TextTransform);
@@ -53,7 +53,7 @@ export type TextProps = BaseTextProps;
  * - `<b>{...}</b>` with bolded text
  * - `<i>{...}</i>` with italicized text
  */
-export default function Text(props: TextProps) { 
+export function Text(props: TextProps) { 
   const textStyle: CSSProperties = {
     fontFamily: props.family,
     fontWeight: props.weight,
