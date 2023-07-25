@@ -1,5 +1,5 @@
-export { ButtonVariant, T_ButtonVariant } from "./ButtonBase";
+export { ButtonVariant, type T_ButtonVariant } from "./ButtonBase";
 export { BaseButtonProps, ButtonBase } from "./ButtonBase";
-export { ButtonProps, Button } from "./Button";
-export { ButtonIconProps, ButtonIcon } from "./ButtonIcon";
-export { ButtonWithIconProps, ButtonWithIcon } from "./ButtonWithIcon";
+export { type ButtonProps, Button } from "./Button";
+export { type ButtonIconProps, ButtonIcon } from "./ButtonIcon";
+export { type ButtonWithIconProps, ButtonWithIcon } from "./ButtonWithIcon";

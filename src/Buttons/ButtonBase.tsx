@@ -15,7 +15,7 @@ export enum ButtonVariant {
 // @ts-ignore
 const ButtonVariants = Object.keys(ButtonVariant) as (keyof typeof ButtonVariant);
 /** The variant of this button. This closely resembles how Mantine handles button variants */
-export type T_ButtonVariant = ButtonVariant | typeof ButtonVariants;
+export type T_ButtonVariant = ButtonVariant;
 
 export type BaseButtonProps = {
   /** The style variant of the button. Defaults to `subtle` */

@@ -1,19 +1,13 @@
 import { CSSProperties, ReactNode } from "react";
 import { T_ComponentSize } from "../_Global";
-/** BUTTONBASE - 13/07/2023
- * The most basic element in the Phosphorus button rebuild. Buttons in Mantine are not suitable
- * for working in most cases due to the limitations with Mantine's color system, so this button
- * offers more useful values for us.
- */
 /** The variant of this button. This closely resembles how Mantine handles button variants */
 export declare enum ButtonVariant {
     Filled = "filled",
     Light = "light",
     Subtle = "subtle"
 }
-declare const ButtonVariants: "Filled" | "Light" | "Subtle";
 /** The variant of this button. This closely resembles how Mantine handles button variants */
-export type T_ButtonVariant = ButtonVariant | typeof ButtonVariants;
+export type T_ButtonVariant = ButtonVariant;
 export type BaseButtonProps = {
     /** The style variant of the button. Defaults to `subtle` */
     variant?: T_ButtonVariant;
@@ -61,5 +55,4 @@ export type BaseButtonProps = {
  * appearances across all backgrounds.
  */
 export declare function ButtonBase(props: BaseButtonProps): import("react/jsx-runtime").JSX.Element;
-export {};
 //# sourceMappingURL=ButtonBase.d.ts.map

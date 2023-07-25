@@ -1,9 +1,6 @@
 import { ReactNode } from "react";
 import { ButtonIconProps } from "./ButtonIcon";
 import { ButtonProps } from "./Button";
-/** BUTTONWITHICON - 13/07/2023
- * A complex button element that contains an icon before or after the text
- */
 export type ButtonWithIconProps = ButtonProps & ButtonIconProps & {
     /** The icon for this button */
     icon: ReactNode;

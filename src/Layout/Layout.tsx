@@ -13,7 +13,7 @@ export enum FlexDirection {
 // @ts-ignore
 const FlexDirections = Object.keys(FlexDirection) as (keyof typeof FlexDirection);
 /** The direction of a flex container's children */
-export type T_FlexDirection = FlexDirection | typeof FlexDirections;
+export type T_FlexDirection = FlexDirection;
 
 /** How to align a flex container's children */
 export enum FlexAlign { 
@@ -25,7 +25,7 @@ export enum FlexAlign {
 // @ts-ignore
 const FlexAligns = Object.keys(FlexAlign) as (keyof typeof FlexAlign);
 /** How to align a flex container's children */
-export type T_FlexAlign = FlexAlign | typeof FlexAligns;
+export type T_FlexAlign = FlexAlign;
 
 /** How to justify a flex container's children */
 export enum FlexJustify { 
@@ -38,6 +38,6 @@ export enum FlexJustify {
   SpaceEvenly = "space-evenly",
 }
 // @ts-ignore
-const FlexJutifies = Object.keys(FlexJustify) as (keyof typeof FlexJustify);
+const FlexJustifies = Object.keys(FlexJustify) as (keyof typeof FlexJustify);
 /** How to justify a flex container's children */
-export type T_FlexJustify = FlexJustify | typeof FlexJutifies;
+export type T_FlexJustify = FlexJustify;

@@ -1,9 +1,4 @@
 import { TextProps as MTextProps } from "@mantine/core";
-/** TEXT - 13/07/2023
- * A basic override element for Mantine's text that allows for text formatting interjection.
- * This component should allow for much more elegant compatibility with the i18n-next module
- * and i18n in general.
- */
 /** Horizontal alignment of text */
 export declare enum TextAlign {
     left = "left",
@@ -11,8 +6,7 @@ export declare enum TextAlign {
     center = "center",
     justify = "justify"
 }
-declare const TextAligns: "center" | "left" | "right" | "justify";
-export type T_TextAlign = TextAlign | typeof TextAligns;
+export type T_TextAlign = TextAlign;
 /** Transform effects to apply to text */
 export declare enum TextTransform {
     none = "none",
@@ -20,8 +14,7 @@ export declare enum TextTransform {
     uppercase = "uppercase",
     lowercase = "lowercase"
 }
-declare const TextTransforms: "none" | "capitalize" | "lowercase" | "uppercase";
-export type T_TextTransform = TextTransform | typeof TextTransforms;
+export type T_TextTransform = TextTransform;
 /** Props for all text components */
 export type BaseTextProps = MTextProps & {
     /** The font family of this text component. This must match the imported name of the font */
@@ -37,5 +30,4 @@ export type TextProps = BaseTextProps;
  * - `<i>{...}</i>` with italicized text
  */
 export declare function Text(props: TextProps): import("react/jsx-runtime").JSX.Element;
-export {};
 //# sourceMappingURL=Text.d.ts.map

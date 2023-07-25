@@ -9,9 +9,8 @@ export declare enum FlexDirection {
     ColumnReverse = "column-reverse",
     RowReverse = "row-reverse"
 }
-declare const FlexDirections: "Vertical" | "Horizontal" | "Column" | "Row" | "VerticalReverse" | "HorizontalReverse" | "ColumnReverse" | "RowReverse";
 /** The direction of a flex container's children */
-export type T_FlexDirection = FlexDirection | typeof FlexDirections;
+export type T_FlexDirection = FlexDirection;
 /** How to align a flex container's children */
 export declare enum FlexAlign {
     Start = "flex-start",
@@ -19,9 +18,8 @@ export declare enum FlexAlign {
     Center = "center",
     Stretch = "stretch"
 }
-declare const FlexAligns: "Start" | "End" | "Center" | "Stretch";
 /** How to align a flex container's children */
-export type T_FlexAlign = FlexAlign | typeof FlexAligns;
+export type T_FlexAlign = FlexAlign;
 /** How to justify a flex container's children */
 export declare enum FlexJustify {
     Start = "flex-start",
@@ -32,8 +30,6 @@ export declare enum FlexJustify {
     SpaceAround = "space-around",
     SpaceEvenly = "space-evenly"
 }
-declare const FlexJutifies: "Start" | "End" | "Center" | "Stretch" | "SpaceBetween" | "SpaceAround" | "SpaceEvenly";
 /** How to justify a flex container's children */
-export type T_FlexJustify = FlexJustify | typeof FlexJutifies;
-export {};
+export type T_FlexJustify = FlexJustify;
 //# sourceMappingURL=Layout.d.ts.map

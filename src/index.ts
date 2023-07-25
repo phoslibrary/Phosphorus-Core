@@ -9,4 +9,4 @@ export * from "./Layout/Layout"
 
 export * from "./Text"
 
-export * from "./_Global"
+export { ComponentSize, type T_ComponentSize } from "./_Global"

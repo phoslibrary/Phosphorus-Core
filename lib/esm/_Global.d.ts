@@ -6,8 +6,6 @@ export declare enum ComponentSize {
     LG = "lg",
     XL = "xl"
 }
-declare const ComponentSizes: "XS" | "SM" | "MD" | "LG" | "XL";
 /** The size of this component. */
-export type T_ComponentSize = ComponentSize | typeof ComponentSizes;
-export {};
+export type T_ComponentSize = ComponentSize;
 //# sourceMappingURL=_Global.d.ts.map

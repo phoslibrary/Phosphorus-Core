@@ -14,7 +14,7 @@ export enum TextAlign {
 }
 // @ts-ignore
 const TextAligns = Object.keys(TextAlign) as (keyof typeof TextAlign);
-export type T_TextAlign = TextAlign | typeof TextAligns;
+export type T_TextAlign = TextAlign;
 
 /** Transform effects to apply to text */
 export enum TextTransform {
@@ -25,7 +25,7 @@ export enum TextTransform {
 }
 // @ts-ignore
 const TextTransforms = Object.keys(TextTransform) as (keyof typeof TextTransform);
-export type T_TextTransform = TextTransform | typeof TextTransforms;
+export type T_TextTransform = TextTransform;
 
 /** Props for all text components */
 export type BaseTextProps = MTextProps & { 

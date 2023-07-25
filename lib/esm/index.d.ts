@@ -5,5 +5,5 @@ export * from "./Buttons/ButtonWithIcon";
 export * from "./Inputs/SegmentedControl";
 export * from "./Layout/Layout";
 export * from "./Text";
-export * from "./_Global";
+export { ComponentSize, type T_ComponentSize } from "./_Global";
 //# sourceMappingURL=index.d.ts.map

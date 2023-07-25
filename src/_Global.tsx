@@ -10,4 +10,4 @@ export enum ComponentSize {
 // @ts-ignore
 const ComponentSizes = Object.keys(ComponentSize) as (keyof typeof ComponentSize);
 /** The size of this component. */
-export type T_ComponentSize = ComponentSize | typeof ComponentSizes;
+export type T_ComponentSize = ComponentSize;

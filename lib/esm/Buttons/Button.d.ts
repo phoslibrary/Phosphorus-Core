@@ -1,8 +1,5 @@
 import { T_TextAlign, T_TextTransform } from "../Text";
 import { BaseButtonProps } from "./ButtonBase";
-/** BUTTON - 13/07/2023
- * A basic, text-based button.
- */
 export type ButtonProps = BaseButtonProps & {
     /** Text weight for this button"s text */
     weight?: number;
